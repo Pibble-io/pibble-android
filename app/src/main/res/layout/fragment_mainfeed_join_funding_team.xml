@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_home_background"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_height" />
+
+        <TextView
+            android:id="@+id/txt_description"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/linear_corner5_gray"
+            android:gravity="top"
+            android:hint="@string/description"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_a8a8a8"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <TextView
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/linear_corner5_gray"
+            android:gravity="top"
+            android:hint="@string/location"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:textColorHint="@color/grey_a8a8a8"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="gone"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:text="tag123"
+                    android:textColor="@color/black"
+                    android:background="@drawable/linear_corner5_background_gray"/>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/txt_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/linear_corner5_gray"
+            android:gravity="top"
+            android:hint="@string/tag"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_a8a8a8"
+            android:textSize="14sp"
+            tools:ignore="Autofill,TextFields" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:padding="12dp"
+            android:background="@drawable/linear_corner5_gray">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_teamlogo"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:foreground="@drawable/img_corner_radius"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/txt_teamEmo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:visibility="invisible"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_teamname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="17sp"
+                            android:text="Name"/>
+
+                        <TextView
+                            android:id="@+id/txt_teamtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textColor="@color/dark_custom_gray"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_members"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/dark_custom_gray"
+                    android:text="Members : 1,210 Created at 10-20-2018"/>
+
+                <TextView
+                    android:id="@+id/txt_raise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/dark_custom_gray"
+                    android:text="Raise 2000 PIB Goal 5000 PIB"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_team_check"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

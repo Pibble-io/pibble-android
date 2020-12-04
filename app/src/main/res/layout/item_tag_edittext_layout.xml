@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.originqiu.library.MEditText xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/txt_search"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:drawablePadding="2dp"
+    android:padding="8dp"
+    android:singleLine="true"
+    android:maxEms="20"
+    android:layout_marginRight="4dp"
+    android:layout_marginLeft="4dp"
+    android:hint="@string/add_hashtag"
+    android:textColor="@color/black"
+    android:textSize="14sp">
+
+</me.originqiu.library.MEditText>

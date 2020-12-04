@@ -1,0 +1,401 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="#ffffff"
+    >
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_tabbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/menu_background">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:src="@drawable/menu_background"/>-->
+
+        <LinearLayout
+            android:id="@+id/linear_setting_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_gifticon"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_giftcoin"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/gift"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_wallet"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/wallet"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_notification"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/notifications_small"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_settings"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/settings"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_btns"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+
+                <RelativeLayout
+                    android:id="@+id/linear_camera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_media"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/media"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_commerce"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_commerce"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/post_menu_commerce"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_charity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_charity"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/charity"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:id="@+id/linear_album"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_album"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/album_small"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_goods"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/post_menu_goods"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linear_funding"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_funding"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:text="@string/funding"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_bottombar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:background="@color/white">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:background="@color/transparent">
+
+                <LinearLayout
+                    android:id="@+id/linear_tab_home"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_tab_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_home_unselect"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_tab_discover"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_tab_discover"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/menu_discover_unselect"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_tab_add"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_tab_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_post_unselect"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_tab_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_tab_profile"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/menu_profile_unselect"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_tab_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_tab_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu_more_unselect"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

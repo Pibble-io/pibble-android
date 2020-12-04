@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2">
+
+                <ImageButton
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/jmui_back_btn_bg"
+                    android:src="@drawable/img_back_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/post_charity"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="0.2"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/txt_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorMain" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_out"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_home_background">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/linear_corner5_gray">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:id="@+id/img_mark"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/icon_charity_mark"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="@color/dark_custom_gray"
+                            android:textSize="12sp"
+                            android:text="@string/enter_your_goal_here"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:background="@drawable/linear_corner5_gray">
+
+                        <LinearLayout
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_width="0px"
+                            android:layout_height="0px"/>
+
+                        <EditText
+                            android:id="@+id/edit_goal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@color/transparent"
+                            android:maxLength="8"
+                            android:inputType="number"
+                            android:textColor="@color/gray"
+                            android:textStyle="bold"
+                            android:text="100000"
+                            android:textSize="27sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:text="PIB"
+                            android:textSize="27sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="48dp"
+                        android:layout_marginRight="48dp"
+                        android:layout_marginBottom="24dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/dark_custom_gray"
+                            android:text="@string/charity_state"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_corner5_gray">
+
+                    <EditText
+                        android:id="@+id/edit_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:hint="@string/add_campaign_title"
+                        android:textColorHint="@color/light_custom_gray"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:background="@color/transparent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_rasingfor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_who"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/linear_corner5_gray">
+
+                        <TextView
+                            android:id="@+id/txt_select"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="@string/who_are_you_rasing_funds_for"
+                            android:textColorHint="@color/light_custom_gray"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:text=""
+                            android:background="@color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/img_director_select"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/icon_director_right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_select_who"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <ListView
+                            android:id="@+id/list_select"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="12dp"
+                            android:listSelector="@color/transparent"
+                            android:focusableInTouchMode="false"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            tools:listitem="@layout/item_list_charity_who">
+
+                        </ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/linear_corner5_gray">
+
+                        <TextView
+                            android:id="@+id/txt_category"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:hint="@string/choose_a_category"
+                            android:textColorHint="@color/light_custom_gray"
+                            android:textColor="@color/black"
+                            android:text=""
+                            android:background="@color/transparent"/>
+
+                        <ImageView
+                            android:id="@+id/img_director_category"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/icon_director_right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_list_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <ListView
+                            android:id="@+id/list_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginRight="12dp"
+                            android:focusableInTouchMode="false"
+                            android:listSelector="@color/transparent"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            tools:listitem="@layout/item_list_charity_who">
+
+                        </ListView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

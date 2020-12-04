@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/img_back"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:background="@drawable/back_btn_bg"-->
+                <!--android:src="@drawable/back" />-->
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/verifyCode_screen_title"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_emailverify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:text="@string/auth_emailverify_content"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.star.pibbledev.services.global.customview.PinView
+                android:id="@+id/firstPinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/common_padding"
+                android:inputType="number"
+                android:textColor="@color/text_colors"
+                android:textSize="40sp"
+                app:itemRadius="@dimen/pv_pin_view_item_radius" >
+                <requestFocus/>
+            </com.star.pibbledev.services.global.customview.PinView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_sign"
+            android:text="@string/button_continue"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorMain" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_resend"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/transparent"
+                android:text="@string/button_resend_code"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btn_change_email"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/transparent"
+                android:text="@string/button_change_e_mail_address"
+                android:textSize="15sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

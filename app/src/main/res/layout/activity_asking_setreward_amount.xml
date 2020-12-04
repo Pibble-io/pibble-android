@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:alpha="0.9"
+        android:background="@drawable/background_blur"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_corner_13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/set_reward"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/min_100_pib_max_100_000_pib"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:padding="4dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/linear_corner5_gray">
+
+            <EditText
+                android:id="@+id/edit_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2000"
+                android:maxLength="10"
+                android:inputType="number"
+                android:background="@color/transparent"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/pib"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="@string/your_pib_balance"
+                android:textSize="13sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/txt_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:text="0 PIB"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linear_min"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/btn_border_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/min"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/linear_max"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/btn_border_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="@string/max"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/confirm"
+            android:textSize="15sp"
+            android:textColor="@color/colorMain"
+            android:background="@drawable/linear_corner_13"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel"
+            android:textSize="15sp"
+            android:textColor="@color/grey_464646"
+            android:background="@drawable/linear_corner_13"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

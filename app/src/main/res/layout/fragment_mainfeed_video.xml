@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/count_time"
+            style="@style/PassportText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/PassportText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            tools:text="0:00"
+            android:textColor="@color/white_alpha"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/count_time"
+            android:layout_marginTop="2dp"
+            android:max="100"
+            android:progress="0"
+            android:theme="@style/ProgressBarStyle"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background" />
+
+    <com.star.pibbledev.home.createmedia.mediapicker.ui.picker.component.CameraControls xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/camera_controls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_controls_height"
+        android:layout_gravity="bottom"
+        android:elevation="7dp"
+        app:camera="@+id/camera"
+        app:captureDrawable="@drawable/record_button"
+        app:captureVideo="true"
+        app:cover="@+id/video_cover"
+        app:hidingFlash="true"
+        app:hidingThree="true"
+        tools:targetApi="lollipop" />
+
+</FrameLayout>

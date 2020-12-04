@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:foreground="@drawable/img_corner_radius"/>
+
+            <TextView
+                android:id="@+id/txt_emo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="Namedfdelena"/>
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_custom_gray"
+                android:textSize="12sp"
+                android:text="version"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:text="Super Early Bird x1"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/txt_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="3000"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:background="@color/line_background_color"/>
+
+</LinearLayout>

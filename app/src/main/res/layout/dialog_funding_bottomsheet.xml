@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <LinearLayout
+        android:id="@+id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="SHARE YOUR INFLUENCE"/>
+
+                <TextView
+                    android:id="@+id/txt_funding_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="#charity #children #individual" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_funding_mark_hasreward_blue"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_funding_teaminfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:text="@string/team"/>
+
+                    <TextView
+                        android:id="@+id/txt_teamname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="ROSEWOOD LONDON"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:text="@string/members"/>
+
+                    <TextView
+                        android:id="@+id/txt_members"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="1210"
+                        android:textSize="11sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_funding_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center"
+                android:background="@drawable/linear_corner5_blue">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/post_for_this_team"
+                    android:gravity="center"
+                    android:textColor="@color/colorMain"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:text="@string/about_funding" />
+
+        <TextView
+            android:id="@+id/txt_supporters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="@string/backers" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/raised"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:id="@+id/txt_raised"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginStart="5dp"
+                    android:text="20%"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:text="@string/goal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@drawable/progress_background_gray">
+
+                    <FrameLayout
+                        android:id="@+id/frag_process_fund"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/progress_background_blue"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp">
+
+                        <TextView
+                            android:id="@+id/txt_current_amount"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1000 PIB"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/txt_goal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="5000 PIB"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/started"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray"/>
+                <TextView
+                    android:id="@+id/txt_enddate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="12sp"
+                    android:gravity="end"
+                    android:textColor="@color/black"
+                    android:text="@string/end_date"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:id="@+id/frag_status_process_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@drawable/progress_background_gray">
+
+                    <FrameLayout
+                        android:id="@+id/frag_status_process"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/progress_background_green"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_amounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="8dp"
+                android:textStyle="bold"
+                android:text="@string/price1" />
+
+            <LinearLayout
+                android:id="@+id/linear_super"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/linear_corner18_blue">
+
+                <TextView
+                    android:id="@+id/txt_super"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/super_early_bird"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorMain"/>
+
+                <TextView
+                    android:id="@+id/txt_super_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="12sp"
+                    android:text="5000PIB"
+                    android:textColor="@color/colorMain" />
+
+                <TextView
+                    android:id="@+id/txt_super_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/limited"
+                    android:textColor="@color/colorMain"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_early"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txt_early"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/early_bird"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_early_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="12sp"
+                    android:text="5000PIB" />
+
+                <TextView
+                    android:id="@+id/txt_early_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/left_lowercase" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_regular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:id="@+id/txt_regular"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/regular_price"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txt_regular_amount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:textSize="12sp"
+                    android:text="5000PIB" />
+
+                <TextView
+                    android:id="@+id/txt_regular_limit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="@string/pledged" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_funding_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="@string/initial_fundraising_goal"/>
+
+                <TextView
+                    android:id="@+id/txt_inital_goal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="50,000 PIB"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="@string/funds_raised"/>
+
+                <TextView
+                    android:id="@+id/txt_funds_raised"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="50,000 PIB"/>
+
+                <TextView
+                    android:id="@+id/txt_raised_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="200%"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="@string/ended_with_point"/>
+
+                <TextView
+                    android:id="@+id/txt_ended_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/grey_464646"
+                    android:text="25 Aug, 2019"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_funding_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/icon_funding_congratulation"/>
+
+            <TextView
+                android:id="@+id/txt_funding_status_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="12sp"
+                android:textColor="@color/grey_464646"
+                android:text="@string/funding_completed_msg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_donate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:background="@drawable/linear_corner5_maincolor">
+
+            <TextView
+                android:id="@+id/txt_funding_button_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/funding_this_campaign"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

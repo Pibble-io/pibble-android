@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_news"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_news"
+                    app:state="IMAGE"
+                    app:strokeWidth="0.5dp"/>
+
+                <TextView
+                    android:id="@+id/txt_news"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/news"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_blockchain"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_coin"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_blockchain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/blockchain"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_top"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_hot"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/top_lower"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_webtoon"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_webtoon"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_webtoon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/webtoon"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_newbie"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_newbie"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_newbie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/newbie"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_funding"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_funding"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_funding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/funding"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_promote"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_promote"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_promote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/promote_verb"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <com.github.abdularis.civ.AvatarImageView
+                    android:id="@+id/img_shopping"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/icon_group_shopping"
+                    app:state="IMAGE"
+                    app:strokeWidth="1dp"/>
+
+                <TextView
+                    android:id="@+id/txt_shopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="11sp"
+                    android:text="@string/shopping"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/linear_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_top_group"/>
+
+            <LinearLayout
+                android:id="@+id/linear_banner_message"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="-30dp"
+                android:gravity="center_vertical"
+                android:alpha="0.5"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/txt_banner_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:focusable="true"
+                    android:scrollHorizontally="true"
+                    android:focusableInTouchMode="true"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:freezesText="true"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="14hour 25min 23sec Left"/>
+
+            <LinearLayout
+                android:id="@+id/linear_leaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/linear_corner_18">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMain"
+                    android:text="@string/leaderboard"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/linear_howtowin"-->
+                <!--android:layout_width="110dp"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_marginLeft="8dp"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:gravity="center"-->
+                <!--android:background="@drawable/linear_corner_18">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/how_to_win"/>-->
+
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/line_background_color"/>
+
+</LinearLayout>

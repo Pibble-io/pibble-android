@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333">
+
+                <ImageButton
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/jmui_back_btn_bg"
+                    android:src="@drawable/wallet_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/settings"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:gravity="end">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:text="@string/push_notifications"/>
+
+            <LinearLayout
+                android:id="@+id/linear_mute"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/notification_mute"/>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/check_mute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:sb_checked="false"
+                    app:sb_checked_color="@color/colorMain"
+                    app:sb_show_indicator="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_post_comments"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/posts_and_comments"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_follower_friend"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/follower_and_friends"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_profile"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/profile"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_message_room"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/message_room"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_promotion_funding"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/promotions_and_funding"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_wallet_activity"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/wallet_activity"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_account"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/account"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="@string/other_notification"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="@string/email_and_sms"/>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/check_email_sms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:sb_checked="false"
+                    app:sb_checked_color="@color/colorMain"
+                    app:sb_show_indicator="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

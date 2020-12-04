@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.star.pibbledev.home.createmedia.mediapicker.ui.picker.component.CameraControls xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/camera_controls"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/camera_controls_height"
+        android:layout_gravity="bottom"
+        android:elevation="7dp"
+        app:camera="@+id/camera"
+        app:cover="@+id/photo_cover"
+        tools:targetApi="lollipop" />
+
+    <View
+        android:id="@+id/photo_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur_background" />
+
+</FrameLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn_bg"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/forgotPassword_screen_title"
+                android:layout_marginRight="40dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="@string/forgotPassword_screen_firstText"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:id="@+id/frame_viaSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/circule_background"/>
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/icon_viasms"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forgotPassword_screen_viaSMS"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/white_alpha"
+                    android:text="@string/or"/>
+
+                <FrameLayout
+                    android:id="@+id/frame_viaEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="70dp"
+                    android:layout_gravity="bottom">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/circule_background"/>
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/icon_email"/>
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forgotPassword_screen_viaEmail"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="18dp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"/>
+
+                </FrameLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

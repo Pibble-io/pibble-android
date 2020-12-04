@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:padding="5dp">-->
+
+            <!--<ImageButton-->
+                <!--android:id="@+id/img_back"-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:background="@drawable/back_btn_bg"-->
+                <!--android:src="@drawable/back" />-->
+            <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/forgotPassword_screen_title"-->
+                <!--android:layout_marginRight="40dp"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:layout_height="wrap_content"/>-->
+        <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="200dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/icon_email" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/forgot_emailsent_screen_firstText"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgot_emailsent_screen_secondText"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:background="@drawable/btn_sign"
+            android:text="@string/button_next"
+            android:textColor="@color/colorMain" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

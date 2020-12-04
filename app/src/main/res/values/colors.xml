@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00BAFF</color>
+    <color name="colorPrimaryDark">#00BAFF</color>
+    <color name="colorAccent">#00BAFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorMain">#00BAFF</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="menu_item_back_pres_color">#00BAFF</color>
+    <color name="white_alpha">#7FFFFFFF</color>
+
+    <color name="colorTabbar">#37c8ff</color>
+
+        <!--//MyDialog Style Colors Start-->
+    <color name="cyan_accent_700">#00B8D4</color>
+    <color name="blue_500">#2196F3</color>
+
+    <color name="text_primary_light">#FFFFFF</color>
+    <color name="text_primary_dark">#01579B</color>
+    <color name="text_secondary_light">#f1f1f1</color>
+    <color name="text_secondary_dark">#448AFF</color>
+    <!--//MyDialog Style Colors End-->
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#FFA700</color>
+    <color name="colorLightGray">#7C7C7C</color>
+    <color name="colorBuleGray">#24C3FF</color>
+
+    <!--user avatar background color-->
+    <color name="color1">#24C3FF</color>
+    <color name="color2">#F8D800</color>
+    <color name="color3">#EA5455</color>
+    <color name="color4">#7367F0</color>
+    <color name="color5">#8C1BAB</color>
+    <color name="color6">#9708CC</color>
+    <color name="color7">#F55555</color>
+    <color name="color8">#045ACD</color>
+    <color name="color9">#FA016D</color>
+    <color name="color10">#D939CD</color>
+    <color name="color11">#28C76F</color>
+    <color name="color12">#9F44D3</color>
+    <color name="color13">#3677FF</color>
+    <color name="color14">#6018DD</color>
+    <color name="color15">#B210FF</color>
+
+    <color name="promotion_color1">#517AC3</color>
+    <color name="promotion_color2">#51C351</color>
+    <color name="promotion_color3">#FFC500</color>
+
+    <color name="charity_color">#21D1B6</color>
+
+    <color name="colorWalletLine">#9CDFFF</color>
+    <color name="colorWalletPink">#FF0089</color>
+    <color name="colorWalletGreen">#00E3C0</color>
+    <color name="colorWalletText">#BFBFBF</color>
+
+    <color name="text_selected">#FFFFFF</color> 
+    <color name="text_focused">#E91E63</color> 
+    <color name="text_default">#FFFFFF</color>
+
+    <color name="line_background_color">#E3E3E3</color>
+    <color name="wallet_home_background">#F1F1F1</color>
+
+    <color name="windowBackground">#d9d9d9</color>
+    <color name="ic_launcher_background">#00BAFF</color>
+    <color name="black">#000000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="dark_gray">#A9A9A9</color>
+    <color name="gray">#808080</color>
+
+    <color name="green_32ffdf">#32ffdf</color>
+    <color name="bg_gray">#ecedef</color>
+    <color name="transparent_black">#94333232</color>
+    <drawable name="tab_gray">@color/bg_gray</drawable>
+    <drawable name="tab_white">@android:color/white</drawable>
+    <color name="grey_d8d8d8">#d8d8d8</color>
+    <color name="grey_959595">#959595</color>
+    <color name="grey_bfbfbf">#bfbfbf</color>
+    <color name="grey_dfdfdf">#dfdfdf</color>
+    <color name="grey_eaeaea">#eaeaea</color>
+    <color name="grey_f1f1f1">#f1f1f1</color>
+    <color name="grey_a8a8a8">#A8A8A8</color>
+    <color name="grey_8D8D8D">#8D8D8D</color>
+    <color name="grey_c6c6c6">#c6c6c6</color>
+    <color name="grey_f8f8f8">#f8f8f8</color>
+    <color name="grey_464646">#464646</color>
+    <color name="grey_7C7C7C">#7C7C7C</color>
+
+    <color name="grey_digitalgoods">#EFEFEF</color>
+    <color name="text_digitalgoods">#434343</color>
+
+    <color name="viewfinder_border">#00BAFF</color>
+
+    <color name="wallet_pibcolor">#00AEFF</color>
+
+    <color name="light_custom_gray">#B5B5B5</color>
+    <color name="dark_custom_gray">#464646</color>
+
+    <!--setting page-->
+
+    <color name="colorGray1">#aaa8b3</color>
+    <color name="colorGrayText">#cdccd1</color>
+
+    <!--commnet-->
+
+    <color name="background_reply">#707070</color>
+    <color name="background_delete">#FF4D4D</color>
+    <color name="background_leave">#FF1D96</color>
+    <color name="background_pick">#FFE925</color>
+
+    <!-- tag -->
+    <color name="tag_text_color_hint">#CECECE</color>
+    <color name="tag_edit_text_color">#222222</color>
+
+   <!-- chat -->
+
+    <color name="chat_me_background">#F7F7F7</color>
+    <color name="password_check_status">#3DFFCD</color>
+    <color name="password_uncheck_status">#7FFFFFFF</color>
+
+    <!--chart-->
+
+    <color name="chart_pink">#FF4FAE</color>
+    <color name="chart_blue">#00AEFF</color>
+    <color name="chart_yellow">#FF9100</color>
+    <color name="chart_green">#1DE9B6</color>
+
+    <!--promote button color-->
+    <color name="promote_button2">#517AC3</color>
+    <color name="promote_button3">#FFC500</color>
+    <color name="promote_button4">#51C351</color>
+    <color name="promote_button5">#00AEFF</color>
+
+</resources>

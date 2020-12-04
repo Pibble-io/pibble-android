@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:background="@drawable/background_charity_donate"/>
+
+    <LinearLayout
+        android:id="@+id/linear_brush"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/linear_corner_13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icon_upvote_grey"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_love_it_i_will"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textColor="@color/colorWalletPink"
+                    android:text="@string/donate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/for_your_campaign"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/img_change_wallet"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerInside"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_change_donate"/>
+
+            <LinearLayout
+                android:id="@+id/linear_edittext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/txt_brush"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="0"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:background="@drawable/icon_edittext_background"
+                    android:textSize="27sp"/>
+
+                <TextView
+                    android:id="@+id/txt_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/pib"
+                    android:textColor="@color/colorMain"
+                    android:textSize="27sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <SeekBar
+                android:id="@+id/upvote_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:min="0"
+                android:thumb="@drawable/icon_promotion_seekbar"
+                android:progressTint="@color/colorMain" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/linear_min"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/btn_border_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/min"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:id="@+id/linear_max"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:background="@drawable/btn_border_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/max"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_upvote"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/raise"
+            android:textSize="15sp"
+            android:textColor="@color/colorMain"
+            android:background="@drawable/linear_corner_13"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/cancel"
+            android:textSize="15sp"
+            android:textColor="@color/grey_464646"
+            android:background="@drawable/linear_corner_13"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

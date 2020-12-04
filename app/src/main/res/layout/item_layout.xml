@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.star.pibbledev.home.createmedia.mediapicker.ui.component.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/image_height"
+    android:layout_height="@dimen/image_height"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="@dimen/image_height"
+        android:layout_height="@dimen/image_height"
+        android:layout_gravity="center"
+        android:background="@color/silver"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/play_button"
+        android:visibility="invisible"
+        tools:ignore="ContentDescription" />
+
+    <View
+        android:id="@+id/transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_black"
+        android:visibility="gone" />
+
+</com.star.pibbledev.home.createmedia.mediapicker.ui.component.SquareRelativeLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn_bg"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/phoneVerify_screen_verification"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/transparent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/phoneVerify_screen_phoneNumber"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewPhoneNumber"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <com.rilixtech.CountryCodePicker
+                        android:id="@+id/cpp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+
+                        app:ccp_textColor="@color/white"
+                        app:ccp_textSize="16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/edit_phoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/auth_phone"
+                        android:textColorHint="@color/white_alpha"
+                        android:textColor="@color/white"
+                        android:inputType="phone"
+                        android:cursorVisible="false"
+                        android:textSize="17sp"
+                        android:background="@color/transparent"
+                        android:textCursorDrawable="@null"
+                        android:singleLine="true" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="25dp"
+                        android:background="#7FFFFFFF"
+                        android:layout_gravity="bottom"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/viewPhoneBottomline"
+                android:layout_width="125dp"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/layoutPhone"
+                android:background="#FFFFFFFF" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_sign"
+            android:text="@string/phoneVerify_screen_next"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorMain" />
+
+    </FrameLayout>
+
+</FrameLayout>

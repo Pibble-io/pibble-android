@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <RelativeLayout
+            android:id="@+id/releative_second"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="78dp"
+                    android:layout_height="78dp">
+
+                    <FrameLayout
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:id="@+id/img_second_user"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:scaleType="centerCrop"
+                            android:foreground="@drawable/img_corner_radius"/>
+
+                        <TextView
+                            android:id="@+id/txt_second_emo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_badge_leaderboard_two"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="2"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_second_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="elena"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_won_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_corner15_lightgray">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_water_white"/>
+
+                    <TextView
+                        android:id="@+id/txt_second_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="121dp"
+                android:layout_height="93dp">
+
+                <FrameLayout
+                    android:layout_width="121dp"
+                    android:layout_height="93dp"
+                    android:paddingLeft="18dp"
+                    android:paddingRight="18dp"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <ImageView
+                        android:id="@+id/img_first_user"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:scaleType="centerCrop"
+                        android:foreground="@drawable/img_corner_radius"/>
+
+                    <TextView
+                        android:id="@+id/txt_first_emo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="25sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp">
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/icon_badge_leaderboard_one"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:text="1"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/icon_win_left_type1"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_win_right_type1"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="elena"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/linear_won_first"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="18dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/linear_corner15_lightgray">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:src="@drawable/icon_water_white"/>
+
+                <TextView
+                    android:id="@+id/txt_first_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/releative_third"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="78dp"
+                    android:layout_height="78dp">
+
+                    <FrameLayout
+                        android:layout_width="78dp"
+                        android:layout_height="78dp"
+                        android:padding="4dp">
+
+                        <ImageView
+                            android:id="@+id/img_third_user"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:scaleType="centerCrop"
+                            android:foreground="@drawable/img_corner_radius"/>
+
+                        <TextView
+                            android:id="@+id/txt_third_emo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="28dp"
+                        android:layout_height="28dp">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/icon_badge_leaderboard_three"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="17sp"
+                            android:textStyle="bold"
+                            android:text="3"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_third_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="elena"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/linear_won_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_corner15_lightgray">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:src="@drawable/icon_water_white"/>
+
+                    <TextView
+                        android:id="@+id/txt_third_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/line_background_color"/>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="5dp">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn_bg"
+                android:src="@drawable/back" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/forgotPassword_screen_title"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:text="@string/forgot_email_screen_firstText"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="@string/email"
+            android:textSize="15sp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+            android:textColor="@color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:hint="@string/email"
+                android:inputType="textPersonName"
+                android:textSize="17sp"
+                android:cursorVisible="true"
+                android:textCursorDrawable="@null"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white_alpha">
+                <requestFocus/>
+            </EditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="25dp"
+                android:background="#7FFFFFFF"
+                android:layout_gravity="bottom"/>
+
+            <View
+                android:id="@+id/viewEmailBottomline"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#FFFFFFFF"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="bottom"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:background="@drawable/btn_sign"
+            android:text="@string/forgot_email_screen_reset"
+            android:textColor="@color/colorMain" />
+
+    </FrameLayout>
+
+</FrameLayout>

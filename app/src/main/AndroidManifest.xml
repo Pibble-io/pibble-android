@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.star.pibbledev">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".PibbleApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:configChanges="locale"
+        android:usesCleartextTraffic="false"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".auth.SignupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".auth.PhoneVerificationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".auth.SigninActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".auth.VerifyCodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".auth.ForgotPasswordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".auth.ForgotPasswordEmailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".auth.ForgotpasswordEmailsentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".auth.ResetPasswordActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".auth.PasswordResetSuccessfullActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".auth.EmailVerifyActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".wallet.home.RegisterPinActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".wallet.home.HomeWalletActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".wallet.paybil.PayBillActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".wallet.send.SendToSelectActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".wallet.receive.ReceiveQraddressActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden"/>
+        <activity android:name=".wallet.activity.ActivityWalletActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden"/>
+        <activity android:name=".wallet.send.QRcodeScan" android:screenOrientation="portrait"/>
+        <activity android:name=".wallet.exchange.ExchangeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".wallet.send.SendPIBCreatActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".wallet.request.RequestSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".wallet.request.RequestCreateActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".wallet.forgot.ResetPinCodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".wallet.forgot.ForgotPinSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".wallet.forgot.ConfirmCodeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".home.createmedia.mediapicker.ui.picker.PhotoPickerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".home.userinfo.UserProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.createmedia.description.MainFeedDescriptionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".home.editmedia.MediaCaptionEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.createmedia.location.MainFeedLocationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".home.createmedia.tags.MainFeedTagsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden"/>
+        <activity android:name=".home.upvote.AddUpvoteActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden" />
+        <activity android:name=".home.upvote.CreateDonateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.comments.CommentActivity" android:screenOrientation="portrait"  />
+        <activity android:name=".setting.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.photopicker.PickerActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.CreateDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.UsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".discover.activities.DiscoverItemDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".discover.activities.PlaceDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".dashboard.DashboardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".profile.activity.TagListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".chatroom.activity.ChatRoomActivity" android:screenOrientation="portrait" />
+        <activity android:name=".home.imagedetail.DisplayingImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".chatroom.activity.RoomsInGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".BaseActivity" />
+        <activity android:name=".profile.activity.setting.SettingHomeActicity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.friend.SettingCloseFriendActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.commerce.SettingCommerceActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.account.SettingAccountMutedUsersActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.account.SettingAccountHomeActivity" android:screenOrientation="portrait" android:configChanges="locale"/>
+        <activity android:name=".profile.activity.setting.account.SettingAccountChangeLanguageActivity" android:screenOrientation="portrait" android:configChanges="locale"/>
+        <activity android:name=".home.createmedia.postmedia.MediaPostFirstActivity" android:screenOrientation="portrait" />
+        <activity android:name=".home.digitalgoods.createcommerce.PostCommerceActivity" android:screenOrientation="portrait" />
+        <activity android:name=".profile.activity.setting.account.SettingAccountUsernameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name=".profile.activity.setting.about.SettingAboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.wallet.SettingWalletHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.wallet.SettingWalletDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.invite.SettingInviteFriendActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize" android:configChanges="keyboardHidden"/>
+        <activity android:name=".home.promotion.CreatePromotionDestinationActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.promotion.CreatePromotionSetWebsiteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.promotion.CreatePromotionBudgetActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name=".home.promotion.CreatePromotionReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.insight.SettingPromotionInsightActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.promotion.PromotionPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.WebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.report.ReportReasonSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.myfeed.MyFeedsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CreateFundingFirstStepActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CreateFundingSecondStepActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CreateFundingThirdStepActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CreateFundingSelectTeamActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.NotificationHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.PostAndCommentActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.FollowingAndFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.MessageRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.PromotionAndFundingActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.WalletActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.setting.notification.AccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.JoinFundingTeamActivity" android:screenOrientation="portrait" />
+        <activity android:name=".home.goods.creategoods.PostGoodsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".home.topgroup.LeaderBoardActivity" android:screenOrientation="portrait" />
+        <activity android:name=".tutorial.TutorialActivity" android:screenOrientation="portrait" />
+        <activity android:name=".wallet.send.SelectPIBTypeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".CopyToClipboardActivity" />
+        <activity android:name=".chatroom.activity.MessageRoomActivity" android:screenOrientation="portrait" />
+        <activity android:name=".wallet.home.samsung.activity.SamsungWalletWithdrawActivity" />
+        <activity android:name=".gifticon.GiftHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".gifticon.GiftSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CrowdRewardTypeSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.CrowdRewardSetActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.funding.activity.SupporterListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".profile.activity.PlayroomActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.asking.SetRewardAmountActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateVisible" />
+        <activity android:name=".home.asking.AskingHelpListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".gifticon.GiftInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.topgroup.BannerDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".auth.SocialLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.album.AlbumActivity" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <!--
+        facebook app id
+        -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <!--
+        samsung keystore
+        -->
+        <meta-data android:name="scw_app_id" android:value="pm7ufRYJ0b"/>
+
+        <!--
+             The API key for Google Maps-based APIs.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cde26efdcaec65d1e0b321662d8cdf271bc87962" />
+
+        <service android:name=".services.firebase.MessagingService"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".services.network.ScheduledService" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_launcher"/>
+
+        <provider
+            android:authorities="com.facebook.app.FacebookContentProvider373784113542765"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

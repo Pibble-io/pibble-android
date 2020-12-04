@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linear_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2">
+
+                <ImageButton
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/jmui_back_btn_bg"
+                    android:src="@drawable/img_back_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/digitalgoods_post_commerce"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:padding="4dp"
+                android:gravity="end">
+
+                <TextView
+                    android:id="@+id/txt_next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:text="@string/post"
+                    android:gravity="end"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorMain" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/wallet_home_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/linear_corner5_gray">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:hint="@string/title"
+                    android:textColorHint="@color/light_custom_gray"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@color/transparent"
+                    android:nextFocusUp="@id/edit_title"
+                    android:nextFocusLeft="@id/edit_title"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/linear_corner5_gray">
+
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:hint="@string/sell_price"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:textColorHint="@color/light_custom_gray"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:background="@color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:textSize="14sp"
+                    android:text="@string/pib"
+                    android:layout_marginEnd="12dp" />
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:background="@drawable/linear_corner5_gray">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<CheckBox-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:button="@drawable/checkbox_custom"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/new_lower"-->
+                        <!--android:textColor="@color/black"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<CheckBox-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginLeft="12dp"-->
+                        <!--android:layout_marginRight="12dp"-->
+                        <!--android:button="@drawable/checkbox_custom"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/used"-->
+                        <!--android:textColor="@color/black"/>-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:background="@drawable/linear_corner5_gray">-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:hint="@string/goods_web_site"-->
+                    <!--android:textColorHint="@color/light_custom_gray"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:background="@color/transparent"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="@drawable/linear_corner5_gray">-->
+
+                <!--<EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:hint="@string/description"-->
+                    <!--android:textColorHint="@color/light_custom_gray"-->
+                    <!--android:textSize="13sp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:background="@color/transparent" />-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/linear_corner5_gray">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/downloadable"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <com.suke.widget.SwitchButton
+                    android:id="@+id/switch_downloadable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginEnd="12dp"
+                    app:sb_checked="false"
+                    app:sb_checked_color="@color/colorMain"
+                    app:sb_show_indicator="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/linear_corner5_gray"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:text="@string/photo_licencing"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="@string/commercial"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/switch_commerical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorMain"
+                            app:sb_show_indicator="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="@string/royalty_free"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/switch_royalty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorMain"
+                            app:sb_show_indicator="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="@string/editorial_use"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/switch_editorial"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp"
+                            app:sb_checked="true"
+                            app:sb_checked_color="@color/colorMain"
+                            app:sb_show_indicator="false"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="12dp"
+                            android:text="@string/exclusive"
+                            android:textSize="13sp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                        <com.suke.widget.SwitchButton
+                            android:id="@+id/switch_exclusive"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginEnd="12dp"
+                            app:sb_checked="false"
+                            app:sb_checked_color="@color/colorMain"
+                            app:sb_show_indicator="false"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/line_dot">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/img_term"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="12dp"
+                        android:src="@drawable/icon_term_unchecked"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:text="@string/term_service"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linear_adaptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/img_user"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:foreground="@drawable/img_corner_radius"
+                android:scaleType="centerCrop"
+                android:background="@color/color2"/>
+
+            <TextView
+                android:id="@+id/txt_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:text="E9"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/light_gray"
+                    android:text="yesterday"/>
+
+                <Button
+                    android:id="@+id/btn_reply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/reply"
+                    android:textColor="@color/light_gray"
+                    android:textSize="12sp"
+                    android:background="@color/transparent"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/txt_upvoteamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWalletGreen"
+                    android:text="100 Brushed"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/img_upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/icon_comment_upvote_green"/>
+
+    </LinearLayout>
+
+</LinearLayout>

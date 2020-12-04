@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/linear_userinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:id="@+id/img_user"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:foreground="@drawable/img_corner_radius"/>
+
+                    <TextView
+                        android:id="@+id/txt_emo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="17sp"
+                        android:gravity="center"
+                        android:textColor="@color/white"/>
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="@color/black"
+                    android:text="elena"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_upvote_animaiton"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/linear_corner14_greeen">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_water_white"/>
+
+                <TextView
+                    android:id="@+id/txt_reamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginStart="4dp"
+                    android:text="10"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/linear_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_corner15_maincolor">
+
+                    <TextView
+                        android:id="@+id/txt_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="@string/follow"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_upvote_amount"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:gravity="end">
+
+                <LinearLayout
+                    android:id="@+id/linear_won_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_corner15_lightgray">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_water_white"/>
+
+                    <TextView
+                        android:id="@+id/txt_upvote_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:textSize="13sp"
+                        android:text="30"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/line_background_color"/>
+
+</LinearLayout>

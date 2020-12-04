@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resolution: 3000 x 2002 pixel"
+            android:textColor="@color/light_gray"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/txt_dpi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DPI: :300 dpi (25.4cm x 17.0cm)"
+            android:textColor="@color/light_gray"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/txt_format"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Files format: JPEG"
+            android:textColor="@color/light_gray"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

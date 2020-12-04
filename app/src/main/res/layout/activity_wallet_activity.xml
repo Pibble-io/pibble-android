@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333">
+
+            <ImageButton
+                android:id="@+id/img_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/jmui_back_btn_bg"
+                android:src="@drawable/wallet_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/wallet_Activity_title"
+                android:textSize="17sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.333"
+            android:visibility="invisible"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/img_check"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:background="@drawable/jmui_back_btn_bg"
+                android:src="@drawable/btn_check" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <LinearLayout
+        android:id="@+id/linear_location"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/wallet_home_background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/linear_corner_5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical">
+
+                <com.gigamole.navigationtabstrip.NavigationTabStrip
+                    android:id="@+id/tab_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    app:nts_color="@color/colorMain"
+                    app:nts_size="15sp"
+                    app:nts_weight="3dp"
+                    app:nts_factor="2.5"
+                    app:nts_type="line"
+                    app:nts_gravity="bottom"
+                    app:nts_corners_radius="1.5dp"
+                    app:nts_animation_duration="300"
+                    app:nts_active_color="@color/colorMain"
+                    app:nts_inactive_color="@color/line_background_color"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line_background_color"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/list_activities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+                <LinearLayout
+                    android:id="@+id/linear_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="150dp"-->
+                    <!--android:layout_height="300dp"-->
+                    <!--android:src="@drawable/empty_activity"/>-->
+
+                    <TextView
+                        android:id="@+id/txt_empty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/no_brush_activity"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:id="@+id/txt_content_empty"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/no_brush_cotent"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/setting_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/btn_setting_cancel"
+            android:background="@color/transparent"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/setting_pibble_mark"
+            android:layout_marginEnd="30dp"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:id="@+id/linear_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="80dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_commerce"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/commerce"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_funding"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/crowd_funding"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_album"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/album"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_event"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/event"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_setting"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/log_out"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="25dp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/linear_gray_background">
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/icon_setting_notification"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/notifications"
+                        android:textColor="@color/colorGrayText"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/icon_setting_mark"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:text="@string/pibble"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorGrayText"
+                    android:text="@string/blockchain_apps"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

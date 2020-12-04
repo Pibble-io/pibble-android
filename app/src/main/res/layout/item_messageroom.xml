@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <LinearLayout
+            android:id="@+id/linear_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/mute_layout"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/silver">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="@string/chatroom_mute"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leave_layout"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/background_leave">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:text="@string/leave"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="70dp">
+
+                    <FrameLayout
+                        android:layout_width="64dp"
+                        android:layout_height="64dp">
+
+                        <ImageView
+                            android:id="@+id/img_user"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:scaleType="centerCrop"
+                            android:foreground="@drawable/img_corner_radius"/>
+
+                        <TextView
+                            android:id="@+id/txt_emo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:textColor="@color/white"/>
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/img_type"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/icon_digitalgoods_cart"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txt_name"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:singleLine="true"
+                                android:ellipsize="end"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/txt_members"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="4dp"
+                                android:layout_marginLeft="4dp"
+                                android:textSize="17sp"
+                                android:visibility="visible"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorLightGray"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt_details"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:textColor="@color/light_custom_gray"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/txt_available"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/not_available"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorWalletPink"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:orientation="vertical"
+                        android:gravity="end">
+
+                        <TextView
+                            android:id="@+id/txt_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/light_custom_gray"
+                            android:textSize="12sp" />
+
+                        <FrameLayout
+                            android:id="@+id/frame_badge"
+                            android:layout_width="27dp"
+                            android:layout_height="27dp"
+                            android:layout_marginTop="4dp"
+                            android:padding="4dp">
+
+                            <ImageView
+                                android:id="@+id/img_badge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_message_badge"/>
+
+                            <TextView
+                                android:id="@+id/txt_badgeNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"/>
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/line_background_color"/>
+
+        </LinearLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</LinearLayout>

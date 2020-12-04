@@ -1,0 +1,18 @@
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:background="?toolbarColor"
+    android:minHeight="44dp"
+    android:theme="@style/Toolbar"
+    app:contentInsetLeft="16dp"
+    app:contentInsetStart="16dp"
+    app:layout_collapseMode="pin"
+    app:navigationIcon="@drawable/back">
+
+    <include layout="@layout/toolbar_body" />
+</androidx.appcompat.widget.Toolbar>
+
+
+

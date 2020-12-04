@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333">
+
+                <ImageButton
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/jmui_back_btn_bg"
+                    android:src="@drawable/wallet_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/settings"
+                    android:textSize="17sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.333"
+                android:gravity="end">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_gray"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_invite_friends"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_invite_friends"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/invite_friends"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_close_friend"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_close_friends"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/close_friends"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_notification"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_notifications"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/notifications_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_commerce"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_commerce"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/commerce_small"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_promotions"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_promotions"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/promotions"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_funding"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_funding"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/funding"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_wallet"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/wallet"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_account"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_account"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/account"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_help"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_help"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/help"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_about"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_about"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/black"
+                    android:text="@string/about"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_setting_director"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/light_gray"/>
+
+            <LinearLayout
+                android:id="@+id/linear_logout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/setting_logout"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:textColor="@color/colorMain"
+                    android:text="@string/log_out"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
